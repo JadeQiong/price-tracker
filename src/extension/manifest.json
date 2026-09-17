@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "Costco Price Tracker",
+    "version": "1.0.0",
+    "description": "Read Costco product price from the current page.",
+    "content_scripts": [
+      {
+        "matches": ["https://www.costco.com/*"],
+        "js": ["content.js"],
+        "run_at": "document_idle"
+      }
+    ]
+  }
